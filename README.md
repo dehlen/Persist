@@ -7,7 +7,7 @@ This packages implements a wrapper around persistence related APIs on iOS/macOS 
 Currently only Swift Package Manager is supported. 
 Swift Package Manager is a dependency manager built into Xcode.
 
-If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency... and enter package repository URL https://github.com/dehlen/Atomic.git, then follow the instructions.
+If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency... and enter package repository URL https://github.com/dehlen/Persist.git, then follow the instructions.
 
 To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.
 
