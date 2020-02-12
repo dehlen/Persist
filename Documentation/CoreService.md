@@ -22,7 +22,7 @@ public init(bundle: Bundle, dataModelName name: String)
 ## init(bundle:dataModelName:syncedWithCloud:)
 
 ``` swift
-@available(iOS 13, *) public init(bundle: Bundle, dataModelName name: String, syncedWithCloud isCloud: Bool = false)
+@available(iOS 13, OSX 10.15, *) public init(bundle: Bundle, dataModelName name: String, syncedWithCloud isCloud: Bool = false)
 ```
 
 ## Properties

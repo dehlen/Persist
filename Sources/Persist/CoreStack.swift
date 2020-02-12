@@ -38,6 +38,21 @@ public final class CoreStack: PersistenceStore {
         return request
     }
     
+    /// Fetch request for any type
+    /// - Parameters:
+    ///   - type: Type to fetch
+    ///   - predicate: Predicate
+    public func fetchRequest(for type: Any.Type, sortedBy sortDescriptor: NSSortDescriptor) throws -> NSFetchRequest<NSFetchRequestResult> {
+        guard let `class` = type as? AnyClass else {
+            throw Errors.invalidType(type: type)
+        }
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: `class`))
+        request.sortDescriptors = [sortDescriptor]
+        return request
+    }
+    
+    
     // MARK: <PersistenceStore>
     
     /**

@@ -39,6 +39,19 @@ public func fetchRequest(for type: Any.Type, predicate: NSPredicate) throws -> N
   - type: Type to fetch
   - predicate: Predicate
 
+## fetchRequest(for:sortedBy:)
+
+Fetch request for any type
+
+``` swift
+public func fetchRequest(for type: Any.Type, sortedBy sortDescriptor: NSSortDescriptor) throws -> NSFetchRequest<NSFetchRequestResult>
+```
+
+### Parameters
+
+  - type: Type to fetch
+  - predicate: Predicate
+
 ## create(type:)
 
 Create a new object of the given type.
