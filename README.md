@@ -1,5 +1,6 @@
 # Persist
 <img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg">
+<img src="./docs/badge.svg">
 
 This packages implements a wrapper around persistence related APIs on iOS/macOS for making your life easier, when all you want to do is to store that damn thing.
 
@@ -12,8 +13,9 @@ If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package D
 To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.
 
 ## Documentation
-The documentation is generated thanks to [swift-doc](https://github.com/SwiftDocOrg/swift-doc).
-You can find the latest version here: [Documentation](./Documentation).
+The documentation is generated thanks to [jazzy](https://github.com/realm/jazzy).
+
+You can find the latest version here: [Documentation](./docs).
 
 ## License
 The MIT License

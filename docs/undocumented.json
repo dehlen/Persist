@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreService.swift",
+      "line": 4,
+      "symbol": "CoreService",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreService.swift",
+      "line": 117,
+      "symbol": "CoreService.init(bundle:dataModelName:syncedWithCloud:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreStack.swift",
+      "line": 4,
+      "symbol": "CoreStack",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreStack.swift",
+      "line": 172,
+      "symbol": "CoreStack.performBlock(block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreStack.swift",
+      "line": 185,
+      "symbol": "CoreStack.performAndWait(block:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Errors.swift",
+      "line": 5,
+      "symbol": "Errors.invalidType(type:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 3,
+      "symbol": "Storage",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 4,
+      "symbol": "Storage.StorageError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 5,
+      "symbol": "Storage.StorageError.error(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 8,
+      "symbol": "Storage.Directory",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 9,
+      "symbol": "Storage.Directory.documents",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "line": 10,
+      "symbol": "Storage.Directory.caches",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 15,
+      "symbol": "UserDefaults.Key",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 27,
+      "symbol": "UserDefaults.set(_:forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 31,
+      "symbol": "UserDefaults.value(forKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 35,
+      "symbol": "UserDefaults.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 40,
+      "symbol": "UserDefaults.register(defaults:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 60,
+      "symbol": "UserDefaultsProperty.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 66,
+      "symbol": "UserDefaultsProperty.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 75,
+      "symbol": "UserDefaultsProperty.remove()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 96,
+      "symbol": "UserDefault.init(_:defaultValue:userDefaults:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
+      "line": 102,
+      "symbol": "UserDefault.wrappedValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/d0283356/Downloads/Libraries/Persist"
+}
