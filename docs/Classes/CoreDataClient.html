@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreDataClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CoreDataClient" class="dashAnchor"></a>
+    <a title="CoreDataClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Persist Docs</a> (89% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Persist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CoreDataClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataClient.html">CoreDataClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Storage.html">Storage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Storage/StorageError.html">– StorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Storage/Directory.html">– Directory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsProperty.html">UserDefaultsProperty</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PersistenceError.html">PersistenceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScratchPad.html">ScratchPad</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Sa">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Sb">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:10Foundation4DataV">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:10Foundation4DateV">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:SD">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Sd">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Sf">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s7Float80V">Float80</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Si">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s5Int16V">Int16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s5Int32V">Int32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s5Int64V">Int64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s4Int8V">Int8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSData">NSData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSDate">NSDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSNumber">NSNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSString">NSString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:SS">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:Su">UInt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s6UInt16V">UInt16</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s6UInt32V">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s6UInt64V">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:s5UInt8V">UInt8</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults/Key.html">– Key</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:7Persist17PropertyListValueP">PropertyListValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/UserDefault.html">UserDefault</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CoreDataClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CoreDataClient</span></code></pre>
+
+                </div>
+              </div>
+            <p>CoreData abstraction</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC9containerACSo21NSPersistentContainerC_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(container:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC9containerACSo21NSPersistentContainerC_tcfc">init(container:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a new CoreData client with a persistent container</p>
+
+<ul>
+<li>@param container  Persistent container to use for Core Data Operations. Defaults to <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC16defaultContainerSo012NSPersistentF0CvpZ">defaultContainer</a></code>
+*</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">container</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="o">=</span> <span class="n"><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC16defaultContainerSo012NSPersistentF0CvpZ">defaultContainer</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC9storeURLsSay10Foundation3URLVGvp"></a>
+                    <a name="//apple_ref/swift/Property/storeURLs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC9storeURLsSay10Foundation3URLVGvp">storeURLs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URLs for the persistent stores.
+Useful for debugging purposes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">storeURLs</span><span class="p">:</span> <span class="p">[</span><span class="kt">URL</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC10decodeJSON_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK11JSONDecoderCxmSo22NSManagedObjectContextCSgtKSo0nO0CRbzSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodeJSON(_:with:to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC10decodeJSON_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK11JSONDecoderCxmSo22NSManagedObjectContextCSgtKSo0nO0CRbzSeRzlF">decodeJSON(_:with:to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes an instance of the indicated type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">decodeJSON</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span>
+                                    <span class="n">with</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">JSONDecoder</span> <span class="o">=</span> <span class="kt">JSONDecoder</span><span class="p">(),</span>
+                                    <span class="n">to</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                    <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC10decodeJSON_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK11JSONDecoderCSayxGmSo22NSManagedObjectContextCSgtKSo0nO0CRbzSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodeJSON(_:with:to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC10decodeJSON_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK11JSONDecoderCSayxGmSo22NSManagedObjectContextCSgtKSo0nO0CRbzSeRzlF">decodeJSON(_:with:to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes an array of the indicated type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">decodeJSON</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span>
+                                    <span class="n">with</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">JSONDecoder</span> <span class="o">=</span> <span class="kt">JSONDecoder</span><span class="p">(),</span>
+                                    <span class="n">to</span> <span class="nv">_</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                    <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC11decodePlist_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK19PropertyListDecoderCxmSo22NSManagedObjectContextCSgtKSo0pQ0CRbzSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodePlist(_:with:to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC11decodePlist_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK19PropertyListDecoderCxmSo22NSManagedObjectContextCSgtKSo0pQ0CRbzSeRzlF">decodePlist(_:with:to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes an instance of the indicated type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">decodePlist</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span>
+                                     <span class="n">with</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">PropertyListDecoder</span> <span class="o">=</span> <span class="kt">PropertyListDecoder</span><span class="p">(),</span>
+                                     <span class="n">to</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                     <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC11decodePlist_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK19PropertyListDecoderCSayxGmSo22NSManagedObjectContextCSgtKSo0pQ0CRbzSeRzlF"></a>
+                    <a name="//apple_ref/swift/Method/decodePlist(_:with:to:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC11decodePlist_4with2to2inAA10ScratchPadOyxG10Foundation0C0V_AK19PropertyListDecoderCSayxGmSo22NSManagedObjectContextCSgtKSo0pQ0CRbzSeRzlF">decodePlist(_:with:to:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes an array of the indicated type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">decodePlist</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span>
+                                     <span class="n">with</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">PropertyListDecoder</span> <span class="o">=</span> <span class="kt">PropertyListDecoder</span><span class="p">(),</span>
+                                     <span class="n">to</span> <span class="nv">_</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                     <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC12encodeToJSON10scratchPad4with10Foundation0C0VAA07ScratchI0OyxG_AG11JSONEncoderCtKSo15NSManagedObjectCRbzSERzlF"></a>
+                    <a name="//apple_ref/swift/Method/encodeToJSON(scratchPad:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC12encodeToJSON10scratchPad4with10Foundation0C0VAA07ScratchI0OyxG_AG11JSONEncoderCtKSo15NSManagedObjectCRbzSERzlF">encodeToJSON(scratchPad:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encodes the object(s) in the given <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> to JSON.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Will throw a <code><a href="../Enums/PersistenceError.html">PersistenceError</a></code> if there are no objects to encode.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">encodeToJSON</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">scratchPad</span><span class="p">:</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span>
+                                      <span class="n">with</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">JSONEncoder</span> <span class="o">=</span> <span class="kt">JSONEncoder</span><span class="p">())</span> <span class="k">throws</span> 
+    <span class="o">-&gt;</span> <span class="kt">Data</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scratchPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> with objects to encode</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encoder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>JSONEncoder</code> to use for encoding</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC13encodeToPlist10scratchPad4with10Foundation0C0VAA07ScratchI0OyxG_AG19PropertyListEncoderCtKSo15NSManagedObjectCRbzSERzlF"></a>
+                    <a name="//apple_ref/swift/Method/encodeToPlist(scratchPad:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC13encodeToPlist10scratchPad4with10Foundation0C0VAA07ScratchI0OyxG_AG19PropertyListEncoderCtKSo15NSManagedObjectCRbzSERzlF">encodeToPlist(scratchPad:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encodes the object(s) in the given <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> to a Plist.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Will throw a <code><a href="../Enums/PersistenceError.html">PersistenceError</a></code> if there are no objects to encode.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">encodeToPlist</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">scratchPad</span><span class="p">:</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span>
+                                       <span class="n">with</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">PropertyListEncoder</span> <span class="o">=</span> <span class="kt">PropertyListEncoder</span><span class="p">())</span> <span class="k">throws</span> 
+    <span class="o">-&gt;</span> <span class="kt">Data</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scratchPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> with objects to encode</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encoder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>PropertyListEncoder</code> to use for encoding</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC16defaultContainerSo012NSPersistentF0CvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC16defaultContainerSo012NSPersistentF0CvpZ">defaultContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A default <code>NSPersistentContainer</code></p>
+
+<ul>
+<li>Uses the <code>Bundle.main.bundleIdentifier</code> or &ldquo;model&rdquo; as a default name.</li>
+<li>Searches <code>Bundle.main</code> for an <code>NSManagedObjectModel</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">defaultContainer</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC17inMemoryContainerSo012NSPersistentG0CvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/inMemoryContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC17inMemoryContainerSo012NSPersistentG0CvpZ">inMemoryContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code>NSPersistentContainer</code> with a store of type <code>NSInMemoryStoreType</code></p>
+
+<ul>
+<li>Uses the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC16defaultContainerSo012NSPersistentF0CvpZ">defaultContainer</a></code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">inMemoryContainer</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC17cloudKitContainerSo012NSPersistentG0CvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudKitContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC17cloudKitContainerSo012NSPersistentG0CvpZ">cloudKitContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code>NSPersistentCloudKitContainer</code></p>
+
+<ul>
+<li>Uses the <code>Bundle.main.bundleIdentifier</code> or &ldquo;model&rdquo; as a default name.</li>
+<li>Searches <code>Bundle.main</code> for an <code>NSManagedObjectModel</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">cloudKitContainer</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Contexts"></a>
+                <a name="//apple_ref/swift/Section/Contexts" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Contexts"></a>
+                  <h3 class="section-name"><p>Contexts</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/viewContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The managed object context associated with the main queue. (read-only)</p>
+
+<p>This property contains a reference to the <code>NSManagedObjectContext</code> that is created and owned by the persistent container which is associated with the main queue of the application. This context is created automatically as part of the initialization of the persistent container.</p>
+
+<p>This context is associated directly with the <code>NSPersistentStoreCoordinator</code> and is non-generational by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">viewContext</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC20newBackgroundContextSo015NSManagedObjectG0CyF"></a>
+                    <a name="//apple_ref/swift/Method/newBackgroundContext()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC20newBackgroundContextSo015NSManagedObjectG0CyF">newBackgroundContext()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a private managed object context.</p>
+
+<p>Invoking this method causes the persistent container to create and return a new <code>NSManagedObjectContext</code> with the <code>concurrencyType</code> set to <code>NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType</code>. This new context will be associated with the <code>NSPersistentStoreCoordinator</code> directly and is set to consume <code>NSManagedObjectContextDidSave</code> broadcasts automatically.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">newBackgroundContext</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">NSManagedObjectContext</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Saving"></a>
+                <a name="//apple_ref/swift/Section/Saving" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Saving"></a>
+                  <h3 class="section-name"><p>Saving</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC4save10scratchPad7Combine6FutureCyAA07ScratchG0OyxGAA16PersistenceErrorOGAK_tSo20NSFetchRequestResultRzlF"></a>
+                    <a name="//apple_ref/swift/Method/save(scratchPad:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC4save10scratchPad7Combine6FutureCyAA07ScratchG0OyxGAA16PersistenceErrorOGAK_tSo20NSFetchRequestResultRzlF">save(scratchPad:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves the underlying <code>NSManagedObjectContext</code> in a <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="n">save</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">scratchPad</span><span class="p">:</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="../Enums/PersistenceError.html">PersistenceError</a></span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">NSFetchRequestResult</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scratchPad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> with changes to save.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Fetching"></a>
+                <a name="//apple_ref/swift/Section/Fetching" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Fetching"></a>
+                  <h3 class="section-name"><p>Fetching</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC7objects3for2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGSo14NSFetchRequestCyxG_So22NSManagedObjectContextCSgtSo0nO6ResultRzlF"></a>
+                    <a name="//apple_ref/swift/Method/objects(for:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC7objects3for2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGSo14NSFetchRequestCyxG_So22NSManagedObjectContextCSgtSo0nO6ResultRzlF">objects(for:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> of containing an array of objects that meet the criteria specified by a given fetch request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">objects</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSFetchRequestResult</span><span class="o">&gt;</span><span class="p">(</span><span class="k">for</span> <span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">NSFetchRequest</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span>
+                                      <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="../Enums/PersistenceError.html">PersistenceError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetchRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSFetchRequest</code> describing the objects to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSManagedObjectContext</code> to use. Defaults to the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a></code> if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC6object3for2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGSo14NSFetchRequestCyxG_So22NSManagedObjectContextCSgtSo0nO6ResultRzlF"></a>
+                    <a name="//apple_ref/swift/Method/object(for:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC6object3for2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGSo14NSFetchRequestCyxG_So22NSManagedObjectContextCSgtSo0nO6ResultRzlF">object(for:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> of containing a single object that meet the criteria specified by a given fetch request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">object</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSFetchRequestResult</span><span class="o">&gt;</span><span class="p">(</span><span class="k">for</span> <span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">NSFetchRequest</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span>
+                                     <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="../Enums/PersistenceError.html">PersistenceError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetchRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSFetchRequest</code> describing the objects to retrieve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSManagedObjectContext</code> to use. Defaults to the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a></code> if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Object%20Reification"></a>
+                <a name="//apple_ref/swift/Section/Object Reification" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Object%20Reification"></a>
+                  <h3 class="section-name"><p>Object Reification</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC6object_2inAA10ScratchPadOyxGx_So22NSManagedObjectContextCSgtSo0iJ0CRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/object(_:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC6object_2inAA10ScratchPadOyxGx_So22NSManagedObjectContextCSgtSo0iJ0CRbzlF">object(_:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the requested object from the specified context.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">object</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">obj</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+                                <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>obj</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object to fetch.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSManagedObjectContext</code> to use. Defaults to the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a></code> if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Deletion"></a>
+                <a name="//apple_ref/swift/Section/Deletion" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Deletion"></a>
+                  <h3 class="section-name"><p>Deletion</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC13deleteObjects6ofType2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGxm_So22NSManagedObjectContextCSgtSo0pQ0CRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObjects(ofType:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC13deleteObjects6ofType2in7Combine6FutureCyAA10ScratchPadOyxGAA16PersistenceErrorOGxm_So22NSManagedObjectContextCSgtSo0pQ0CRbzlF">deleteObjects(ofType:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes all objects of the given type from the specified context.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="n">deleteObjects</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">_</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                                       <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt"><a href="../Enums/PersistenceError.html">PersistenceError</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of a set of objects to delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSManagedObjectContext</code> to use. Defaults to the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a></code> if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC13deleteObjects2in7Combine6FutureCyAA10ScratchPadOyxGs5NeverOGAK_tSo15NSManagedObjectCRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObjects(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC13deleteObjects2in7Combine6FutureCyAA10ScratchPadOyxGs5NeverOGAK_tSo15NSManagedObjectCRbzlF">deleteObjects(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes all objects in the given scratchpad.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="n">deleteObjects</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="k">in</span> <span class="nv">scratch</span><span class="p">:</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Future</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scratch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Object%20Instantiation"></a>
+                <a name="//apple_ref/swift/Section/Object Instantiation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Object%20Instantiation"></a>
+                  <h3 class="section-name"><p>Object Instantiation</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist14CoreDataClientC3new_2inAA10ScratchPadOyxGxm_So22NSManagedObjectContextCSgtSo0iJ0CRbzlF"></a>
+                    <a name="//apple_ref/swift/Method/new(_:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist14CoreDataClientC3new_2inAA10ScratchPadOyxGxm_So22NSManagedObjectContextCSgtSo0iJ0CRbzlF">new(_:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Instantiates a new object of the given type using the specified context.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="k">new</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+                             <span class="k">in</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ScratchPad.html">ScratchPad</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of object to instantiate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>NSManagedObjectContext</code> to use. Defaults to the <code><a href="../Classes/CoreDataClient.html#/s:7Persist14CoreDataClientC11viewContextSo015NSManagedObjectF0Cvp">viewContext</a></code> if nil.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code><a href="../Enums/ScratchPad.html">ScratchPad</a></code> with an object of the type passed in.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-02-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

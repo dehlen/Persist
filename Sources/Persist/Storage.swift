@@ -1,10 +1,13 @@
 import Foundation
 
+/// Store Decodables to disk
 public class Storage {
+    /// Error if a Storage operation failed
     public enum StorageError: Error {
         case error(_ message:String)
     }
 
+    /// Supported directories
     public enum Directory {
         case documents
         case caches

@@ -1,10 +1,12 @@
 import CoreData
 
+/// Wrapper Type to store a `NSFetchRequestResult` in
 public enum ScratchPad<T: NSFetchRequestResult> {
     case object(value: T, context: NSManagedObjectContext)
     case list(value: [T], context: NSManagedObjectContext)
     case empty(NSManagedObjectContext)
 
+    /// Proxy for the context
     public var context: NSManagedObjectContext {
         switch self {
         case let .object(_, context):
@@ -16,6 +18,7 @@ public enum ScratchPad<T: NSFetchRequestResult> {
         }
     }
 
+    /// Proxy for the stored object. Returns the first object if used on a list, nil when empty
     public var object: T? {
         switch self {
         case let .object(object, _):
@@ -27,6 +30,7 @@ public enum ScratchPad<T: NSFetchRequestResult> {
         }
     }
 
+    /// Proxy for the stored objects. Returns an empty array if empty.
     public var array: [T] {
         switch self {
         case let .object(object, _):

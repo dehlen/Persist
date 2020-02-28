@@ -12,7 +12,9 @@ import Foundation
  ```
  */
 public extension UserDefaults {
+    /// Typesafe UserDefaults key
     struct Key: Hashable, RawRepresentable, ExpressibleByStringLiteral {
+        /// Name of the key
         public var rawValue: String
 
         public init(rawValue: String) {
@@ -24,10 +26,17 @@ public extension UserDefaults {
         }
     }
 
+    /** Store value in UserDefaults
+    *  @param value   Value to store
+    *  @param key   Key to store the value at
+   **/
     func set<T>(_ value: T?, forKey key: Key) {
         set(value, forKey: key.rawValue)
     }
 
+    /** Retrieve value in UserDefaults for key. Returns nil if key does not exist.
+     *  @param key   Key to load
+    **/
     func value<T>(forKey key: Key) -> T? {
         return value(forKey: key.rawValue) as? T
     }
@@ -37,6 +46,9 @@ public extension UserDefaults {
         set { set(newValue, forKey: key) }
     }
 
+    /** Register defaults
+     *  @param defaults   Default key/value pairs to use as a fallback if a key was not set previously
+    **/
     func register(defaults: [Key: Any]) {
         let mapped = Dictionary(uniqueKeysWithValues: defaults.map { (key, value) in
             return (key.rawValue, value)
@@ -63,6 +75,7 @@ public final class UserDefaultsProperty<T> {
 
     // Would like to make the value property non-optional. But that depends on a fix/workaround
     // for https://bugs.swift.org/browse/SR-4479.
+    /// Store/Retrieve a value for the given key in the UserDefaults
     public var value: T? {
         set {
             UserDefaults.standard.set(newValue, forKey: identifier)
@@ -72,6 +85,7 @@ public final class UserDefaultsProperty<T> {
         }
     }
 
+    /// Remove key/value pair from UserDefaults
     public func remove() {
         UserDefaults.standard.removeObject(forKey: identifier)
     }

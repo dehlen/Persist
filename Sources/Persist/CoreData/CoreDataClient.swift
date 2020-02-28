@@ -3,9 +3,13 @@ import CoreData
 import Foundation
 import os
 
+/// CoreData abstraction
 public class CoreDataClient {
     private let container: NSPersistentContainer
 
+     /** Initialize a new CoreData client with a persistent container
+      *  @param container  Persistent container to use for Core Data Operations. Defaults to `defaultContainer`
+     **/
     public init(container: NSPersistentContainer = defaultContainer) {
         os_log("Loading persistent stores...")
         container.loadPersistentStores { _, error in
@@ -62,11 +66,17 @@ public extension CoreDataClient {
     }
 }
 
+/// Core Data Errors
 public enum PersistenceError: Error {
+    /// Did not find any objects matching a given predicate
     case noObjectsMatchingPredicate
+    /// Could not fetch objects from context
     case contextFetch(NSError)
+    /// Could not save context
     case contextSave(NSError)
+    /// Error while encoding data
     case encoding
+    /// Error while decoding data
     case decoding
 }
 
