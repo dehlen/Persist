@@ -173,6 +173,78 @@ Swift Package Manager is a dependency manager built into Xcode.</p>
 <p>If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency&hellip; and enter package repository URL <a href="https://github.com/dehlen/Persist.git">https://github.com/dehlen/Persist.git</a>, then follow the instructions.</p>
 
 <p>To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='user-defaults' class='heading'>User Defaults</h3>
+
+<p>To store key/value pairs in the UserDefaults this package implements three type-safe ways for you to choose from.</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">UserDefaults</span><span class="o">.</span><span class="kt">Key</span> <span class="p">{</span>
+   <span class="kd">static</span> <span class="k">let</span> <span class="nv">someKey</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="o">.</span><span class="kt">Key</span> <span class="o">=</span> <span class="s">"SomeKey"</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">someValue</span> <span class="o">=</span> <span class="kt">UserDefaults</span><span class="o">.</span><span class="n">standard</span><span class="p">[</span><span class="o">.</span><span class="n">someKey</span><span class="p">]</span>
+<span class="kt">UserDefaults</span><span class="o">.</span><span class="n">standard</span><span class="p">[</span><span class="o">.</span><span class="n">someKey</span><span class="p">]</span> <span class="o">=</span> <span class="n">someValue</span>
+<span class="kt">UserDefaults</span><span class="o">.</span><span class="nf">register</span><span class="p">([</span>
+    <span class="o">.</span><span class="nv">someKey</span><span class="p">:</span> <span class="s">"Default"</span>
+<span class="p">])</span>
+
+<span class="c1">// or:</span>
+<span class="k">let</span> <span class="nv">someProperty</span> <span class="o">=</span> <span class="kt">UserDefaultsProperty</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"someProperty"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">someValue</span> <span class="o">=</span> <span class="n">someProperty</span><span class="o">.</span><span class="n">value</span>
+<span class="n">someProperty</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">someProperty</span><span class="o">.</span><span class="nf">remove</span><span class="p">()</span>
+
+<span class="c1">// or: Property wrappers</span>
+<span class="kd">@UserDefault("has_seen_app_introduction", defaultValue: false)</span>
+<span class="kd">static</span> <span class="k">var</span> <span class="nv">hasSeenAppIntroduction</span><span class="p">:</span> <span class="kt">Bool</span>
+</code></pre>
+<h3 id='storage' class='heading'>Storage</h3>
+
+<p>When you want to store Codable types on disk you can use the <code><a href="Classes/Storage.html">Storage</a></code> implementation.
+By default <code><a href="Classes/Storage.html">Storage</a></code> allows you to store/retrieve arbitrary Codable files either in the documents or the caches directory.</p>
+<pre class="highlight swift"><code><span class="c1">// Store</span>
+<span class="kt">Storage</span><span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="n">myCodable</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="o">.</span><span class="n">documents</span><span class="p">,</span> <span class="nv">as</span><span class="p">:</span> <span class="s">"storedFilename.json"</span><span class="p">)</span>
+
+<span class="c1">// Load</span>
+<span class="n">myCodable</span> <span class="o">=</span> <span class="kt">Storage</span><span class="o">.</span><span class="nf">retrieve</span><span class="p">(</span><span class="s">"storedFilename.json"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="o">.</span><span class="n">documents</span><span class="p">,</span> <span class="nv">as</span><span class="p">:</span> <span class="kt">MyCodable</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+
+<span class="c1">// Clear</span>
+<span class="kt">Storage</span><span class="o">.</span><span class="nf">clear</span><span class="p">(</span><span class="o">.</span><span class="n">caches</span><span class="p">)</span>
+<span class="kt">Storage</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">"storedFilename.json"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="o">.</span><span class="n">documents</span><span class="p">)</span>
+</code></pre>
+<h3 id='core-data' class='heading'>Core Data</h3>
+
+<p><code>Persist</code> also provides you with a CoreData abstraction ready to use.
+First initialize your CoreData client:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="kt">CoreDataClient</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="kt">CoreDataClient</span><span class="p">(</span><span class="nv">container</span><span class="p">:</span> <span class="kt">CoreDataClient</span><span class="o">.</span><span class="n">inMemoryContainer</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="kt">CoreDataClient</span><span class="p">(</span><span class="nv">container</span><span class="p">:</span> <span class="kt">CoreDataClient</span><span class="o">.</span><span class="n">cloudKitContainer</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"DB at: </span><span class="se">\(</span><span class="n">client</span><span class="o">.</span><span class="n">storeURLs</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+</code></pre>
+
+<p><code>Persist</code> comes with multiple store container implementations out of the box, but you can always pass in your own. If you want to use automatic sync with iCloud use the cloudKitContainer. Please note, that you need to configure your app first to be able to use that (<a href="https://www.andrewcbancroft.com/blog/ios-development/data-persistence/getting-started-with-nspersistentcloudkitcontainer/#what-about-existing-apps">More Info</a>).</p>
+
+<p>Next you can use the known CRUD operations on your database in a type-safe and boilerplate-free way. The package makes heavy use of Combine to provide you with a clean async API.</p>
+<pre class="highlight swift"><code><span class="c1">// Retrieve</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">object</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">fetchRequest</span><span class="p">)</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">objects</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">fetchRequest</span><span class="p">)</span>
+
+<span class="c1">// Create</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">new</span><span class="p">(</span><span class="kt">MyEntity</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+
+<span class="c1">// Delete</span>
+<span class="n">client</span><span class="o">.</span><span class="nf">deleteObjects</span><span class="p">(</span><span class="nv">ofType</span><span class="p">:</span> <span class="kt">MyEntity</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+<p>The framework also has support to store and retrieve Codable types to your database:</p>
+<pre class="highlight swift"><code><span class="c1">// Retrieve</span>
+<span class="k">let</span> <span class="nv">scratchpad</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">decodeJSON</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">JSONDecoder</span><span class="p">(),</span> <span class="nv">to</span><span class="p">:</span> <span class="kt">MyCodable</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">scratchpad</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">decodePlist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="kt">MyCodable</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+
+<span class="c1">// Save</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">encodeToJSON</span><span class="p">(</span><span class="nv">scratchPad</span><span class="p">:</span> <span class="o">.</span><span class="nf">object</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="n">encodable</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">viewContext</span><span class="p">),</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">JSONEncoder</span><span class="p">())</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="k">try</span> <span class="n">client</span><span class="o">.</span><span class="nf">encodeToPlist</span><span class="p">(</span><span class="nv">scratchPad</span><span class="p">:</span> <span class="o">.</span><span class="nf">object</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="n">codable</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">viewContext</span><span class="p">),</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">PropertyListEncoder</span><span class="p">())</span>
+</code></pre>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
 <p>The documentation is generated thanks to <a href="https://github.com/realm/jazzy">jazzy</a>.</p>
