@@ -1,6 +1,8 @@
 # Persist
 <img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg">
 <img src="./docs/badge.svg">
+<img src="https://img.shields.io/badge/Swift-5-orange">
+<img src="https://img.shields.io/badge/Platforms-iOS | macOS-lightgrey">
 
 This packages implements a wrapper around persistence related APIs on iOS/macOS for making your life easier, when all you want to do is to store that damn thing.
 
