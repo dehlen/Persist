@@ -1,75 +1,47 @@
 {
   "warnings": [
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
       "line": 5,
       "symbol": "ScratchPad.object(value:context:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
       "line": 6,
       "symbol": "ScratchPad.list(value:context:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/CoreData/ScratchPad.swift",
       "line": 7,
       "symbol": "ScratchPad.empty(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/DiskStorage.swift",
       "line": 7,
-      "symbol": "Storage.StorageError.error(_:)",
+      "symbol": "DiskStorage.StorageError.error(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/DiskStorage.swift",
       "line": 12,
-      "symbol": "Storage.Directory.documents",
+      "symbol": "DiskStorage.Directory.documents",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/Storage.swift",
+      "file": "/Users/d0283356/Development/Libraries/Persist/Sources/Persist/DiskStorage.swift",
       "line": 13,
-      "symbol": "Storage.Directory.caches",
+      "symbol": "DiskStorage.Directory.caches",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
-      "line": 44,
-      "symbol": "UserDefaults.subscript(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.subscript",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
-      "line": 72,
-      "symbol": "UserDefaultsProperty.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
-      "line": 110,
-      "symbol": "UserDefault.init(_:defaultValue:userDefaults:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/d0283356/Downloads/Libraries/Persist/Sources/Persist/UserDefaultsProperty.swift",
-      "line": 116,
-      "symbol": "UserDefault.wrappedValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/d0283356/Downloads/Libraries/Persist"
+  "source_directory": "/Users/d0283356/Development/Libraries/Persist"
 }
