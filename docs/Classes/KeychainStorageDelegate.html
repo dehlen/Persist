@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KeychainStorageDelegate Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/KeychainStorageDelegate" class="dashAnchor"></a>
+    <a title="KeychainStorageDelegate Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Persist Docs</a> (97% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Persist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KeychainStorageDelegate Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CodableKeychain.html">CodableKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableSingleton.html">CodableSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableStore.html">CodableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableUserDefault.html">CodableUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataClient.html">CoreDataClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelegatedStorage.html">DelegatedStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage/StorageError.html">– StorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage/Directory.html">– Directory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeychainStorage.html">KeychainStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeychainStorageDelegate.html">KeychainStorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Singleton.html">Singleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SingletonStorage.html">SingletonStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SingletonStorageDelegate.html">SingletonStorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorePropertyWrapper.html">StorePropertyWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableKeychain.html">UnwrappedCodableKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableSingleton.html">UnwrappedCodableSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableStore.html">UnwrappedCodableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableUserDefault.html">UnwrappedCodableUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedKeychain.html">UnwrappedKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedSingleton.html">UnwrappedSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedStore.html">UnwrappedStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedUserDefault.html">UnwrappedUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefault.html">UserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PersistenceError.html">PersistenceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScratchPad.html">ScratchPad</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AES.html">AES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/AES/GCM.html">– GCM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/ContiguousBytes.html">ContiguousBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/OSStatus.html">OSStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SymmetricKey.html">SymmetricKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Storage.html">Storage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageData.html">StorageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageDelegate.html">StorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorePropertyWrapperProtocol.html">StorePropertyWrapperProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7Persist19StorageErrorClosurea">StorageErrorClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KeychainStorageDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">KeychainStorageDelegate</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/StorageDelegate.html">StorageDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            <p><code>KeychainStorageDelegate</code> conforming <code><a href="../Protocols/StorageDelegate.html">StorageDelegate</a></code> protocol.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>KeychainStorageDelegate</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC4data6forKeyxSgSS_tKAA0C4DataRzlF"></a>
+                    <a name="//apple_ref/swift/Method/data(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC4data6forKeyxSgSS_tKAA0C4DataRzlF">data(forKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get <code><a href="../Protocols/StorageData.html">StorageData</a></code> for <code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> from the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">data</span><span class="o">&lt;</span><span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">D</span><span class="p">?</span> <span class="k">where</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/StorageData.html">StorageData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> to store the <code><a href="../Protocols/StorageData.html">StorageData</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Protocols/StorageData.html">StorageData</a></code> for <code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC3set_6forKeyyxSg_SStKAA0C4DataRzlF"></a>
+                    <a name="//apple_ref/swift/Method/set(_:forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC3set_6forKeyyxSg_SStKAA0C4DataRzlF">set(_:forKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code><a href="../Protocols/StorageData.html">StorageData</a></code> for <code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> in the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="k">set</span><span class="o">&lt;</span><span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">D</span><span class="p">?,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/StorageData.html">StorageData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/StorageData.html">StorageData</a></code> to store.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> to store the <code><a href="../Protocols/StorageData.html">StorageData</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC6remove6forKeyySS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/remove(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC6remove6forKeyySS_tKF">remove(forKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove <code><a href="../Protocols/StorageData.html">StorageData</a></code> for <code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> from the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a></code> to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC5store_7account10accessibleyx_SSSo11CFStringRefatKAA0C4DataRzlF"></a>
+                    <a name="//apple_ref/swift/Method/store(_:account:accessible:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC5store_7account10accessibleyx_SSSo11CFStringRefatKAA0C4DataRzlF">store(_:account:accessible:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store <code><a href="../Protocols/StorageData.html">StorageData</a></code> for account in the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">D</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageData.html">StorageData</a></span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span>
+                                <span class="nv">account</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">accessible</span><span class="p">:</span> <span class="kt">CFString</span> <span class="o">=</span> <span class="n">kSecAttrAccessibleWhenUnlocked</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/StorageData.html">StorageData</a></code> to store.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Item&rsquo;s account name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessible</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>When the keychain item is accessible.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC4read7accountxSgSS_tKAA0C4DataRzlF"></a>
+                    <a name="//apple_ref/swift/Method/read(account:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC4read7accountxSgSS_tKAA0C4DataRzlF">read(account:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read <code><a href="../Protocols/StorageData.html">StorageData</a></code> for account from the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">read</span><span class="o">&lt;</span><span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">account</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">D</span><span class="p">?</span> <span class="k">where</span> <span class="kt">D</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/StorageData.html">StorageData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Item&rsquo;s account name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Protocols/StorageData.html">StorageData</a></code> for account.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist23KeychainStorageDelegateC6delete7accountySS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/delete(account:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist23KeychainStorageDelegateC6delete7accountySS_tKF">delete(account:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete item for account from the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code>KeychainError.error</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="nv">account</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Item&rsquo;s account name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-04-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

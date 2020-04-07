@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DiskStorage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DiskStorage" class="dashAnchor"></a>
+    <a title="DiskStorage Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Persist Docs</a> (97% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Persist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DiskStorage Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CodableKeychain.html">CodableKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableSingleton.html">CodableSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableStore.html">CodableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CodableUserDefault.html">CodableUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataClient.html">CoreDataClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelegatedStorage.html">DelegatedStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage/StorageError.html">– StorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage/Directory.html">– Directory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeychainStorage.html">KeychainStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeychainStorageDelegate.html">KeychainStorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Singleton.html">Singleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SingletonStorage.html">SingletonStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SingletonStorageDelegate.html">SingletonStorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorePropertyWrapper.html">StorePropertyWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableKeychain.html">UnwrappedCodableKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableSingleton.html">UnwrappedCodableSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableStore.html">UnwrappedCodableStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedCodableUserDefault.html">UnwrappedCodableUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedKeychain.html">UnwrappedKeychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedSingleton.html">UnwrappedSingleton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedStore.html">UnwrappedStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UnwrappedUserDefault.html">UnwrappedUserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefault.html">UserDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PersistenceError.html">PersistenceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScratchPad.html">ScratchPad</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/AES.html">AES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/AES/GCM.html">– GCM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/ContiguousBytes.html">ContiguousBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/OSStatus.html">OSStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SymmetricKey.html">SymmetricKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Storage.html">Storage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageData.html">StorageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageDelegate.html">StorageDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorePropertyWrapperProtocol.html">StorePropertyWrapperProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7Persist19StorageErrorClosurea">StorageErrorClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7Persist8StoreKeya">StoreKey</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DiskStorage</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DiskStorage</span></code></pre>
+
+                </div>
+              </div>
+            <p>Store Decodables to disk</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC0C5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/StorageError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC0C5ErrorO">StorageError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error if a Storage operation failed</p>
+
+                        <a href="../Classes/DiskStorage/StorageError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StorageError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC9DirectoryO"></a>
+                    <a name="//apple_ref/swift/Enum/Directory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC9DirectoryO">Directory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supported directories</p>
+
+                        <a href="../Classes/DiskStorage/Directory.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Directory</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Functions"></a>
+                <a name="//apple_ref/swift/Section/Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Functions"></a>
+                  <h3 class="section-name"><p>Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC5store_2to2asyx_AC9DirectoryOSStKSERzlFZ"></a>
+                    <a name="//apple_ref/swift/Method/store(_:to:as:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC5store_2to2asyx_AC9DirectoryOSStKSERzlFZ">store(_:to:as:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Store an encodable struct to the specified directory on disk</p>
+
+<ul>
+<li>@param object      The encodable struct to store</li>
+<li>@param directory   Where to store the struct</li>
+<li>@param fileName    What to name the file where the struct data will be stored
+*</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">store</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="n">to</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Classes/DiskStorage/Directory.html">Directory</a></span><span class="p">,</span> <span class="k">as</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC8retrieve_4from2asxSS_AC9DirectoryOxmtKSeRzlFZ"></a>
+                    <a name="//apple_ref/swift/Method/retrieve(_:from:as:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC8retrieve_4from2asxSS_AC9DirectoryOxmtKSeRzlFZ">retrieve(_:from:as:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve and convert an Object from a file on disk</p>
+
+<ul>
+<li>@param fileName    Name of the file where struct data is stored</li>
+<li>@param directory   Directory where Object data is stored</li>
+<li>@param type        Object type (i.e. Message.self)</li>
+<li>@return decoded    Object model(s) of data
+*</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">retrieve</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">from</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Classes/DiskStorage/Directory.html">Directory</a></span><span class="p">,</span> <span class="k">as</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC5clearyyAC9DirectoryOKFZ"></a>
+                    <a name="//apple_ref/swift/Method/clear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC5clearyyAC9DirectoryOKFZ">clear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all files at specified directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">clear</span><span class="p">(</span><span class="n">_</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Classes/DiskStorage/Directory.html">Directory</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Persist11DiskStorageC6remove_4fromySS_AC9DirectoryOtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/remove(_:from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Persist11DiskStorageC6remove_4fromySS_AC9DirectoryOtKFZ">remove(_:from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove specified file from specified directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">_</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">from</span> <span class="nv">directory</span><span class="p">:</span> <span class="kt"><a href="../Classes/DiskStorage/Directory.html">Directory</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-04-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
