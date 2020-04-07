@@ -1,7 +1,7 @@
 import Foundation
 
 /// Store Decodables to disk
-public class Storage {
+public class DiskStorage {
     /// Error if a Storage operation failed
     public enum StorageError: Error {
         case error(_ message:String)
